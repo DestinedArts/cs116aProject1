@@ -27,5 +27,5 @@ random notes taken during class
 ex: openFrameworks folder/apps/myApps/<projectname>/bin/data
 
 reading in obj file: starts at index 1, not 0<br>
-Check to make sure you are expecting the verts from the obj file to be "1 origin"<br>
+Check to make sure you are expecting the verts from the obj file to be "1 origin"; no index in 0 for vertices<br>
 ie. in the obj file syntax the vert list starts with index 1, but in a c++ array, it starts with 0
