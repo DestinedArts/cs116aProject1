@@ -1,12 +1,13 @@
-## About
+# About
 Project 1 - 3D Mesh Viewer
 
 Create an indexed Mesh class, read data from a Wavefront .obj file, and display the mesh in an OpenFrameworks interactive 3D Window. A simple panel interface using ofxGUI includes a toggle button to select whether or not face normals are displayed with a slider to adjust the normal.
 
 **Code Editor**: Visual Studio<br>
-**Library**: OpenGL (openFrameworks)
+**Library**: OpenGL (openFrameworks)<br>
+**Addons**: ofxGUI, ofxAssimpModelLoader
 
-## Examples
+# Examples
 * Search: https://www.stlfinder.com/3dmodels/?search=the+dragon+prince&free=0
 * Ethari's Metal Lotus: https://www.thingiverse.com/thing:4049954
 * Cube of Aaravos: https://www.thingiverse.com/thing:3119114
@@ -20,6 +21,23 @@ random notes taken during class
 * erase()
 * size()  size - 1 = top of shape
 * back()
+
+```
+class Mesh {
+  geometry ——> vector<vec3> vertices/vert;
+  vector<Triangle> triangles/tris;
+}
+
+class Triangle {
+  int i, j, k
+}
+
+indexTriangleMethod
+
+ofdrawTriangle(vert[tris[0].i, vert[tris[0].j], vert[tris[0].k]);  // draws triangle mesh "0" or tri[0]
+```
+
+**ofxAssimpModelLoader**: load models from various file formats: XML, obj, etc.
 
 **ofFile**: load/save files
 
